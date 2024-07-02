@@ -1,8 +1,10 @@
 import streamlit as st
 import numpy as np
-import joblib
+import pickle
 
-model = joblib.load("/workspaces/Streamlit-project-fertr/models/multiple_linear_regression.sav")
+with open('../models/multiple_linear_regression.sav', 'rb') as file:
+    model = pickle.load(file)
+
 
 st.title('Medical Charges Predictor')
 
