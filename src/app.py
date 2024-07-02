@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
+import os
 
 if os.path.exists('/workspaces/Streamlit-project-fertr/models/multiple_linear_regression.sav'):
     with open('/workspaces/Streamlit-project-fertr/models/multiple_linear_regression.sav', 'rb') as file:
