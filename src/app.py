@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pickle
 
-with open('../models/multiple_linear_regression.sav', 'rb') as file:
+with open('/workspaces/Streamlit-project-fertr/models/multiple_linear_regression.sav', 'rb') as file:
     model = pickle.load(file)
 
 
